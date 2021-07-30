@@ -36,6 +36,15 @@ class _TableDesktopMenu extends StatelessWidget {
             width: 10,
           ),
           CustomFlatButton(
+            text: 'Contador Stateful 100',
+            onPressed: () =>
+                locator<NavigationService>().navigateTo('/stateful/100'),
+            color: Colors.black,
+          ),
+          SizedBox(
+            width: 10,
+          ),
+          CustomFlatButton(
             text: 'Contador Provider',
             onPressed: () =>
                 locator<NavigationService>().navigateTo('/provider'),
